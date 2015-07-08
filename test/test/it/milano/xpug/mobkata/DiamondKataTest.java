@@ -12,7 +12,7 @@ public class DiamondKataTest {
     }
 
     @Test
-    public void test() throws Exception {
+    public void threeLinesDiamond() throws Exception {
         String expected = " A \n" +
                           "B B\n" +
                           " A \n";
