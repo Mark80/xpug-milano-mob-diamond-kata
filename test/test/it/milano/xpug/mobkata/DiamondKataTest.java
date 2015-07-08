@@ -38,8 +38,10 @@ public class DiamondKataTest {
 
         if (input == 'B')
             lines = new String[] {" A \n", "B B\n"};
-        else if (input == 'C')
-            lines = new String[] {"  A  \n", " B B \n", "C   C\n"};
+        else if (input == 'C') {
+            int dimension = ((input - 'A') *2) +1;
+            lines = new String[]{"  A  \n", " B B \n", "C   C\n"};
+        }
         else
             lines = new String[] {"A\n"};
 
