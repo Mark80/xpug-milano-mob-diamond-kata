@@ -13,23 +13,46 @@ public class DiamondKataTest {
 
     @Test
     public void threeLinesDiamond() throws Exception {
-        String expected = " A \n" +
+        String expected =
+                " A \n" +
                 "B B\n" +
                 " A \n";
 
         assertEquals(expected, diamond('B'));
     }
 
+    @Test
+    public void fiveLinesDiamond() throws Exception {
+        String expected =
+                "  A  \n" +
+                " B B \n" +
+                "C   C\n" +
+                " B B \n" +
+                "  A  \n";
+
+        assertEquals(expected, diamond('C'));
+    }
+
     private String diamond(char input) {
+        String[] lines;
         StringBuilder output = new StringBuilder();
         if (input == 'B') {
-            String[] lines = {" A \n", "B B\n"};
+            lines = new String[] {" A \n", "B B\n"};
 
             output.append(lines[0]);
             output.append(lines[1]);
             output.append(lines[0]);
+        } else if (input == 'C') {
+            lines = new String[] {"  A  \n", " B B \n", "C   C\n"};
+
+            output.append(lines[0]);
+            output.append(lines[1]);
+            output.append(lines[2]);
+            output.append(lines[1]);
+            output.append(lines[0]);
         } else {
-            String[] lines = { "A\n" };
+            lines = new String[] {"A\n"};
+            
             output.append(lines[0]);
         }
 
