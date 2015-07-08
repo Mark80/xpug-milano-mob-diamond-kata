@@ -35,28 +35,28 @@ public class DiamondKataTest {
 
     private String diamond(char input) {
         String[] lines;
-        StringBuilder output = new StringBuilder();
-        if (input == 'B') {
+
+        if (input == 'B')
             lines = new String[] {" A \n", "B B\n"};
-
-            output.append(lines[0]);
-            output.append(lines[1]);
-            output.append(lines[0]);
-        } else if (input == 'C') {
+        else if (input == 'C')
             lines = new String[] {"  A  \n", " B B \n", "C   C\n"};
-            int i = 0;
-
-            for (i = 0; i < lines.length; i++)
-                output.append(lines[i]);
-
-            i -= 2;
-
-            for (; i >= 0; i--)
-                output.append(lines[i]);
-        } else {
+        else
             lines = new String[] {"A\n"};
-            output.append(lines[0]);
-        }
+
+        return linesToOutput(lines);
+    }
+
+    private String linesToOutput(String[] lines) {
+        StringBuilder output = new StringBuilder();
+        int i = 0;
+
+        for (i = 0; i < lines.length; i++)
+            output.append(lines[i]);
+
+        i -= 2;
+
+        for (; i >= 0; i--)
+            output.append(lines[i]);
 
         return output.toString();
     }
