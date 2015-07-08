@@ -44,15 +44,17 @@ public class DiamondKataTest {
             output.append(lines[0]);
         } else if (input == 'C') {
             lines = new String[] {"  A  \n", " B B \n", "C   C\n"};
+            int i = 0;
 
-            output.append(lines[0]);
-            output.append(lines[1]);
-            output.append(lines[2]);
-            output.append(lines[1]);
-            output.append(lines[0]);
+            for (i = 0; i < lines.length; i++)
+                output.append(lines[i]);
+
+            i -= 2;
+
+            for (; i >= 0; i--)
+                output.append(lines[i]);
         } else {
             lines = new String[] {"A\n"};
-            
             output.append(lines[0]);
         }
 
