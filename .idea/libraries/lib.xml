@@ -1,0 +1,25 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/test/lib/jmock-junit3-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/test/lib/hamcrest-core-1.3-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/test/lib/junit-4.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/test/lib/hamcrest-library-1.3-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/test/lib/bsh-core-2.0b4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/test/lib/cglib-nodep-2.2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/test/lib/jmock-junit4-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/test/lib/hamcrest-core-1.3-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/test/lib/hamcrest-core-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/test/lib/hamcrest-unit-test-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/test/lib/jmock-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/test/lib/hamcrest-library-1.3-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/test/lib/hamcrest-unit-test-1.3-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/test/lib/objenesis-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/test/lib/hamcrest-library-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/test/lib/jmock-legacy-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/test/lib/jmock-script-2.6.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
